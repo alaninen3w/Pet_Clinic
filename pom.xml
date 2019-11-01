@@ -14,7 +14,7 @@
     </parent>
     <groupId>raze.springboot</groupId>
     <artifactId>pet_clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>pet_clinic</name>
     <description>Pet Clinic for Spring Boot</description>
 
@@ -45,6 +45,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
@@ -57,7 +58,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/alaninen3w/Pet_Clinic.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>pet_clinic-0.0.3</tag>
   </scm>
 
 </project>
