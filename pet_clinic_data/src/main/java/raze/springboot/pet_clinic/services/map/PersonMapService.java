@@ -1,12 +1,12 @@
 package raze.springboot.pet_clinic.services.map;
 
 import raze.springboot.pet_clinic.model.Person;
-import raze.springboot.pet_clinic.services.CrudService;
+import raze.springboot.pet_clinic.services.PersonCrudService;
 
 import java.util.Set;
 
 public class PersonMapService extends AbstractMapService<Person,Long>
-    implements CrudService<Person,Long>
+    implements PersonCrudService
 {
     @Override
     public Person getById(Long id) {
@@ -20,7 +20,7 @@ public class PersonMapService extends AbstractMapService<Person,Long>
 
     @Override
     public Person save(Person object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 
     @Override

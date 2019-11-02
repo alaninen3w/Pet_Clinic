@@ -1,12 +1,12 @@
 package raze.springboot.pet_clinic.services.map;
 
 import raze.springboot.pet_clinic.model.PetType;
-import raze.springboot.pet_clinic.services.CrudService;
+import raze.springboot.pet_clinic.services.PetTypeCrudService;
 
 import java.util.Set;
 
 public class PetTypeMapService extends AbstractMapService<PetType,Long>
-    implements CrudService<PetType,Long>
+    implements PetTypeCrudService
 {
 
     @Override
@@ -21,7 +21,7 @@ public class PetTypeMapService extends AbstractMapService<PetType,Long>
 
     @Override
     public PetType save(PetType object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 
     @Override

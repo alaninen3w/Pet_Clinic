@@ -1,12 +1,12 @@
 package raze.springboot.pet_clinic.services.map;
 
 import raze.springboot.pet_clinic.model.Owner;
-import raze.springboot.pet_clinic.services.CrudService;
+import raze.springboot.pet_clinic.services.OwnerCrudService;
 
 import java.util.Set;
 
 public class OwnerMapService extends AbstractMapService<Owner,Long>
-        implements CrudService<Owner,Long> {
+        implements OwnerCrudService {
     @Override
     public Owner getById(Long id) {
         return super.getById(id);
@@ -19,7 +19,7 @@ public class OwnerMapService extends AbstractMapService<Owner,Long>
 
     @Override
     public Owner save(Owner object) {
-        return super.save(object.getId(),object);
+        return super.save(object);
     }
 
     @Override
