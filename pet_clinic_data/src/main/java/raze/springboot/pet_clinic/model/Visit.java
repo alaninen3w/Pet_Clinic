@@ -15,6 +15,7 @@ public class Visit extends BaseEntity {
         this.date = date;
     }
 
+
     public String getDescription() {
         return description;
     }
