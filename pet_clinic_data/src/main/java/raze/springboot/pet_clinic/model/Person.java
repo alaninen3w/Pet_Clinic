@@ -1,5 +1,8 @@
 package raze.springboot.pet_clinic.model;
 
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public class Person  extends BaseEntity{
 
 
